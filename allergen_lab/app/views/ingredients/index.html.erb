@@ -3,8 +3,8 @@
 
 <ul>
 
-        <% @ingredients.each do |ingr|  %> </li>
-       <li> <%= ingr.name %> </li> 
+        <% @ingredients.each do |ingredient|  %> </li>
+        <%= ingredient.name %>  <%= ingredient.allergies.count %> 
         <% end %>
 
 </ul>

@@ -8,4 +8,6 @@ class IngredientsController < ApplicationController
     end 
 
 
+
+
 end

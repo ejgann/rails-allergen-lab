@@ -27,7 +27,9 @@ class UsersController < ApplicationController
     end
 
     def destroy
-     define_user.destroy
+     deleted_user = define_user.destroy
+     deleted_user.allergies.destroy_all
+     deleted_user.recipes.destroy_all
      redirect_to users_path
     end 
 
