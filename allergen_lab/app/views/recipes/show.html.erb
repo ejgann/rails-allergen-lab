@@ -1,9 +1,9 @@
 
-<h1> Ingredients for <%= @recipe.name %> </h1> 
+<h3> Ingredients for <%= @recipe.name %> </h3> 
 
 <ul>
 <% @recipe.ingredients.each do |ingredient|%>
-<li><h2><%= link_to ingredient.name, ingredient_path(ingredient) %></h2></li>
+<li><%=  ingredient.name %></li>
 
 <% end %>
 </ul>

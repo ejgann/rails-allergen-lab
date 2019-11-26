@@ -1,5 +1,7 @@
 <h1> Welcome to Our Allergens App </h1>
 
+<h3> Pick a Recipe Below </h3>
+
 <ul>
 <% @recipes.each do |recipe| %>
 <li><%= link_to recipe.name  , recipe_path(recipe) %></li>
@@ -7,5 +9,3 @@
 </ul>
 
 <div> <%= link_to 'Add a New Recipe' , new_recipe_path %></div>
-<br>
-<div> <%= link_to 'Create A New User' , new_user_path %></div> 
