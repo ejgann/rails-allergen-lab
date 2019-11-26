@@ -2,6 +2,10 @@
 
 <ul>
 <% @recipes.each do |recipe| %>
-<li><%= recipe.name %></li>
+<li><%= link_to recipe.name  , recipe_path(recipe) %></li>
 <% end %>
 </ul>
+
+<div> <%= link_to 'Add a New Recipe' , new_recipe_path %></div>
+<br>
+<div> <%= link_to 'Create A New User' , new_user_path %></div> 

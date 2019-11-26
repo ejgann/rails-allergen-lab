@@ -1,1 +1,10 @@
-<h1><%= @recipe.name %></h1>
+
+<h1> Ingredients for <%= @recipe.name %> </h1> 
+
+<ul>
+<% @recipe.ingredients.each do |ingredient|%>
+<li><h2><%= link_to ingredient.name, ingredient_path(ingredient) %></h2></li>
+
+<% end %>
+</ul>
+
